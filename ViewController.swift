@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet private weak var titleLabel: UITextField!
     
-    var tracker: AppTrackable = AppTracker.shared
+//    var tracker: AppTrackable = AppTracker.shared
         
     // MARK: Lifecycle methods
     override func viewDidLoad() {
@@ -31,17 +31,26 @@ class MainViewController: UIViewController {
     
     // MARK: Actions
     @objc func onFirstButtonTap(sender: UIButton!) {
-        tracker.trackFirstButtonTap()
+        FacebookTracker().trackFirstButtonTap()
+        GoogleTracker().trackFirstButtonTap()
+        FirebaseTracker().trackFirstButtonTap()
+        TelesoftasTracker().trackFirstButtonTap()
         print("-----------------------------------------------")
     }
     
     @objc func onSecondButtonTap(sender: UIButton!) {
-        tracker.trackSecondButtonTap()
+        FacebookTracker().trackSecondButtonTap()
+        GoogleTracker().trackSecondButtonTap()
+        FirebaseTracker().trackSecondButtonTap()
+        TelesoftasTracker().trackSecondButtonTap()
         print("-----------------------------------------------")
     }
     
     @objc func onThirdButtonTap(sender: UIButton!) {
-        tracker.trackThirdButtonTap()
+        FacebookTracker().trackThirdButtonTap()
+        GoogleTracker().trackThirdButtonTap()
+        FirebaseTracker().trackThirdButtonTap()
+        TelesoftasTracker().trackThirdButtonTap()
         print("-----------------------------------------------")
     }
 }

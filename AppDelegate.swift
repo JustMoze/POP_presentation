@@ -52,9 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Trackers initialisation
     private func setupAppTracker() {
-        AppTracker.shared.register(tracker: FirebaseTracker())
-        AppTracker.shared.register(tracker: GoogleTracker())
-        AppTracker.shared.register(tracker: TelesoftasTracker())
+//        AppTracker.shared.register(tracker: FirebaseTracker())
+//        AppTracker.shared.register(tracker: GoogleTracker())
+//        AppTracker.shared.register(tracker: TelesoftasTracker())
     }
 }
 
