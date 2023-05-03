@@ -1,10 +1,3 @@
-//
-//  Tracker.swift
-//  Presentation
-//
-//  Created by Modestas Rimeikis on 2023-03-30.
-//
-
 import Foundation
 
 protocol Trackable {
